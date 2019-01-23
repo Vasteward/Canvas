@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Build a Robot</title>
+</head>
+<body>
+    <canvas id="my_canvas"></canvas>
+</body>
+<script>
+    let canvasElement = document.getElementById('my_canvas');
+    let canvasContext = canvasElement.getContext('2d');
+
+    //HEAD
+    canvasContext.fillStyle = 'grey';
+    canvasContext.fillRect(30, 10, 100, 125);
+    canvasContext.lineWidth = 10;
+    //EARS
+    canvasContext.fillStyle = 'black';
+    //x, y, width, height
+    canvasContext.fillRect(20, 30, 10, 40);
+    // canvasContext.strokeStyle = 'blue';
+    canvasContext.fillRect(130, 30, 10, 40);
+
+
+    //EYES
+    canvasContext.strokeStyle = 'black';
+    canvasContext.strokeRect(55, 35, 10, 10);
+    canvasContext.strokeRect(95, 35, 10, 10);
+
+
+    //SMILE
+    canvasContext.fillStyle = 'black';
+    canvasContext.fillRect(47.5, 95, 65, 20);
+    //Clears the specified rectangular area, making it fully transparent.
+    canvasContext.clearRect(48, 96, 64, 18);
+
+
+</script>
+</body>
+</html
